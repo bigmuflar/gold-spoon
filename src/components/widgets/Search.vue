@@ -28,7 +28,7 @@
               </template>
               <template v-slot:append>
 				<v-icon
-					@click="getUserLocation"
+					@click="getUserLocation(); clearInput()"
                     width="16"
                     height="16"
 					style="margin-right: 10px;"
@@ -123,6 +123,9 @@ export default {
 			};
 			this.loadingCities = true;
 			await navigator.geolocation.getCurrentPosition(success, error);
+		},
+		clearInput() {
+			this.searchedLocation = '';
 		}
 	}
 };

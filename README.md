@@ -11,8 +11,9 @@
 
 
 ### UI Display
-
-![Gif Image](https://imgur.com/iXGQcOA.gif)
+<p align="center">
+  <img src="https://i.imgur.com/6wACgyn.gif" />
+</p>
 
 ## Project setup
 ```
